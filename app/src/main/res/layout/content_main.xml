@@ -23,7 +23,7 @@
                 android:layout_height="match_parent">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/addTitle"
+                    android:id="@+id/addTitleLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/inputSide_margins"
@@ -36,9 +36,12 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addTitleEdit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/add_title" />
+                        android:hint="@string/add_title"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapWords" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,7 +53,7 @@
                     android:background="@android:color/darker_gray"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/addTitle" />
+                    app:layout_constraintTop_toBottomOf="@+id/addTitleLayout" />
 
                 <Spinner
                     android:id="@+id/categorySpinner"
@@ -93,7 +96,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/seperator2" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/addDescInput"
+                    android:id="@+id/descriptionLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
@@ -106,9 +109,12 @@
                     app:layout_constraintTop_toBottomOf="@+id/addDescLabel">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/description_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/desc_hint" />
+                        android:hint="@string/desc_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapWords" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <View
@@ -119,7 +125,7 @@
                     android:layout_weight="1"
                     android:background="@android:color/darker_gray"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/addDescInput" />
+                    app:layout_constraintTop_toBottomOf="@+id/descriptionLayout" />
 
                 <TextView
                     android:id="@+id/startDate"
@@ -178,7 +184,7 @@
                     android:textSize="@dimen/h2"/>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/locationInput"
+                    android:id="@+id/locationLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/inputSide_margins"
@@ -191,9 +197,12 @@
                     app:layout_constraintTop_toBottomOf="@+id/endDate">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/location_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/location_hint" />
+                        android:hint="@string/location_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapWords" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <View
@@ -205,7 +214,7 @@
                     android:background="@android:color/darker_gray"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/locationInput" />
+                    app:layout_constraintTop_toBottomOf="@+id/locationLayout" />
 
                 <TextView
                     android:id="@+id/attendees_label"
