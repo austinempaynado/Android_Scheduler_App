@@ -39,5 +39,8 @@
     </string-array>
     <string name="title_activity_list">ListActivity</string>
     <string name="list_label">Overview</string>
+    <string name="personal_tab_label">Personal</string>
+    <string name="work_tab">Work</string>
+    <string name="school_tab_label">School</string>
 
 </resources>
