@@ -1,5 +1,6 @@
 package com.example.assignment_3;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -29,6 +30,13 @@ public class ListActivity extends AppCompatActivity {
 
         setSupportActionBar(binding.toolbar);
 
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent addPage = new Intent(ListActivity.this, com.example.assignment_3.MainActivity.class);
+                startActivity(addPage);
+            }
+        });
     }
 
 }

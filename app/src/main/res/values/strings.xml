@@ -42,5 +42,6 @@
     <string name="personal_tab_label">Personal</string>
     <string name="work_tab">Work</string>
     <string name="school_tab_label">School</string>
+    <string name="add_label">New Meeting</string>
 
 </resources>
